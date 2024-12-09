@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Toys</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Eco-Friendly Educational Toys</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; FLS Project Production (for testing)</p>
+        <p>Made by Omar Ashraf(ATY) and Chat GPT </p>
+        <p>TBH Mostly Chat GPT 😁</p>
+    </footer>
+</body>
+</html>
